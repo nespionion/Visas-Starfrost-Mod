@@ -57,11 +57,7 @@ public class TearlamentHavnis extends EvolvingCard {
         addToBot(new DrawPileToDiscard(p, magicNumber));
     }
 
-    @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        this.triggerOnManualDiscard();
-    }
+     
 
     @Override
     public void triggerOnManualDiscard() {

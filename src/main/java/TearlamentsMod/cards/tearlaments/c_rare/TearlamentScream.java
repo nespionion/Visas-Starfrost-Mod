@@ -48,11 +48,7 @@ public class TearlamentScream extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new TearlamentScreamPower(p, 1)));
     }
 
-    @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        this.triggerOnManualDiscard();
-    }
+     
 
     @Override
     public void triggerOnManualDiscard() {

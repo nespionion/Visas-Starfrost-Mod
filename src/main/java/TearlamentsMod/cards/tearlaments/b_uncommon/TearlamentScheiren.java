@@ -66,11 +66,7 @@ public class TearlamentScheiren extends EvolvingCard {
 
     }
 
-    @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        this.triggerOnManualDiscard();
-    }
+     
 
     @Override
     public AbstractCard makeCopy() { //Optional

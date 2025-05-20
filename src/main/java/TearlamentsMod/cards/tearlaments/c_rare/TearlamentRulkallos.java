@@ -78,11 +78,7 @@ public class TearlamentRulkallos extends EvolvingCard {
         }
     }
 
-    @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        this.triggerOnManualDiscard();
-    }
+     
 
     @Override
     public void triggerOnManualDiscard() {

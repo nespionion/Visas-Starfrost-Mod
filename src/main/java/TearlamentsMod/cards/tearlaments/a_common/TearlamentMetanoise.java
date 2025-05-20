@@ -46,11 +46,7 @@ public class TearlamentMetanoise extends BaseCard {
         addToBot(new GainBlockAction(p, block));
     }
 
-    @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        this.triggerOnManualDiscard();
-    }
+     
 
     @Override
     public void triggerOnManualDiscard() {

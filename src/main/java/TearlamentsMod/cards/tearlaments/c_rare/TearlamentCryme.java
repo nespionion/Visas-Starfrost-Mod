@@ -53,11 +53,7 @@ public class TearlamentCryme extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, magicNumber)));
     }
 
-    @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        this.triggerOnManualDiscard();
-    }
+     
 
     @Override
     public void triggerOnManualDiscard() {

@@ -1,5 +1,6 @@
 package TearlamentsMod.cards.tearlaments.b_uncommon;
 
+import TearlamentsMod.action.DiscardScryAction;
 import TearlamentsMod.action.DrawPileToDiscard;
 import TearlamentsMod.cards.BaseCard;
 import TearlamentsMod.cards.tearlaments.c_rare.TearlamentKitkallos;
@@ -51,7 +52,7 @@ public class TearlamentPerlegia extends BaseCard {
         if (!p.hasPower("StrengthPower")){
             addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 2)));
         }
-        addToBot(new ScryAction(magicNumber));
+        addToBot(new DiscardScryAction(magicNumber));
     }
 
     @Override
@@ -60,11 +61,7 @@ public class TearlamentPerlegia extends BaseCard {
 
     }
 
-    @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        this.triggerOnManualDiscard();
-    }
+     
 
     @Override
     public AbstractCard makeCopy() { //Optional

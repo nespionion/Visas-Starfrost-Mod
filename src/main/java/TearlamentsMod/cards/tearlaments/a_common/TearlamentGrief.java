@@ -49,11 +49,7 @@ public class TearlamentGrief extends BaseCard {
         addToBot(new DiscardAction(p, p, 1, false));
     }
 
-    @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        this.triggerOnManualDiscard();
-    }
+     
 
     @Override
     public void triggerOnManualDiscard() {

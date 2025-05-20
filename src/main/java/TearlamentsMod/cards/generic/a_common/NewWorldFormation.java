@@ -1,5 +1,6 @@
 package TearlamentsMod.cards.generic.a_common;
 
+import TearlamentsMod.action.DiscardScryAction;
 import TearlamentsMod.cards.BaseCard;
 import TearlamentsMod.character.Visas;
 import TearlamentsMod.util.CardStats;
@@ -39,7 +40,7 @@ public class NewWorldFormation extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ScryAction(magicNumber));
+        addToBot(new DiscardScryAction(magicNumber));
     }
 
 }

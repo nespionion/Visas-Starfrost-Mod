@@ -1,5 +1,6 @@
 package TearlamentsMod.character;
 
+import TearlamentsMod.cards.generic.a_common.NewWorldFormation;
 import TearlamentsMod.cards.kashtira.a_common.KashtiraPreparations;
 import TearlamentsMod.cards.mannadium.b_uncommon.MannadiumFearless;
 import TearlamentsMod.cards.mannadium.b_uncommon.MannadiumMeek;
@@ -9,6 +10,11 @@ import TearlamentsMod.cards.scareclaw.a_common.ScareclawAstra;
 import TearlamentsMod.cards.scareclaw.a_common.ScareclawBelone;
 import TearlamentsMod.cards.scareclaw.b_uncommon.ScareclawReichheart;
 import TearlamentsMod.cards.scareclaw.c_rare.ScareclawTriHeart;
+import TearlamentsMod.cards.tearlaments.b_uncommon.TearlamentHavnis;
+import TearlamentsMod.cards.tearlaments.b_uncommon.TearlamentMerrli;
+import TearlamentsMod.cards.tearlaments.b_uncommon.TearlamentReinoheart;
+import TearlamentsMod.cards.tearlaments.b_uncommon.TearlamentScheiren;
+import TearlamentsMod.cards.tearlaments.c_rare.TearlamentCryme;
 import TearlamentsMod.cards.tearlaments.c_rare.TearlamentKitkallos;
 import TearlamentsMod.cards.generic.d_starter.ClearNewWorld;
 import TearlamentsMod.cards.generic.d_starter.DefendVisas;
@@ -164,6 +170,18 @@ public class Visas extends CustomPlayer {
 //        retVal.add(MannadiumFearless.ID);
 //        retVal.add(ScareclawReichheart.ID);
 //        retVal.add(ScareclawTriHeart.ID);
+//        retVal.add(NewWorldFormation.ID);
+//        retVal.add(TearlamentKitkallos.ID);
+//        retVal.add(TearlamentCryme.ID);
+//        retVal.add(TearlamentReinoheart.ID);
+//        retVal.add(TearlamentScheiren.ID);
+//        retVal.add(TearlamentMerrli.ID);
+//        retVal.add(TearlamentHavnis.ID);
+//        retVal.add(TearlamentMerrli.ID);
+//        retVal.add(TearlamentMerrli.ID);
+//        retVal.add(TearlamentMerrli.ID);
+//        retVal.add(TearlamentMerrli.ID);
+//        retVal.add(TearlamentMerrli.ID);
 
         //Actual Starter Deck
         retVal.add(StrikeVisas.ID);

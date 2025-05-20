@@ -110,11 +110,7 @@ public class TearlamentKitkallos extends EvolvingCard {
         addToBot(new DrawPileToDiscard(AbstractDungeon.player, magicNumber));
     }
 
-    @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        this.triggerOnManualDiscard();
-    }
+     
 
     @Override
     public AbstractCard makeCopy() { //Optional

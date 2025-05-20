@@ -57,12 +57,6 @@ public class TearlamentKashtira extends EvolvingCard {
     }
 
     @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        this.triggerOnManualDiscard();
-    }
-
-    @Override
     public void triggerOnManualDiscard() {
         addToBot(new DrawPileToDiscard(AbstractDungeon.player, magicNumber));
     }

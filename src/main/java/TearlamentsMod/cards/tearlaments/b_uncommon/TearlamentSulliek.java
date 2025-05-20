@@ -57,9 +57,5 @@ public class TearlamentSulliek extends BaseCard {
         }
     }
 
-    @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        this.triggerOnManualDiscard();
-    }
+     
 }

@@ -170,15 +170,15 @@ public class EvolveDiscardCardAction extends AbstractGameAction {
             if (temp.isEmpty()) {
                 this.isDone = true;
                 return;
-            } else if (temp.size() == 1){
-                cardToEvolve = (EvolvingCard) temp.getTopCard();
-                this.evolveEvolvingCard(cardToEvolve);
-                this.isDone = true;
-                return;
+//            } else if (temp.size() == 1){
+//                cardToEvolve = (EvolvingCard) temp.getTopCard();
+//                this.evolveEvolvingCard(cardToEvolve);
+//                this.isDone = true;
+//                return;
             } else if (this.optional) {
-                AbstractDungeon.gridSelectScreen.open(temp, this.amount, TEXT[0], false, false, true, false);
+                AbstractDungeon.gridSelectScreen.open(temp, this.amount, true, TEXT[0]);
             } else {
-                AbstractDungeon.gridSelectScreen.open(temp, this.amount, TEXT[0], false, false, false, false);
+                AbstractDungeon.gridSelectScreen.open(temp, this.amount, true, TEXT[0]);
             }
 
             this.tickDuration();
@@ -205,6 +205,11 @@ public class EvolveDiscardCardAction extends AbstractGameAction {
             }
 
             this.tickDuration();
+            if (this.isDone) {
+                for(AbstractCard c : this.p.hand.group) {
+                    c.applyPowers();
+                }
+            }
         }
     }
 

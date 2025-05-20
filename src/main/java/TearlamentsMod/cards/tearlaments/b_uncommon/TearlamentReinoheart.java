@@ -70,11 +70,7 @@ public class TearlamentReinoheart extends EvolvingCard {
         this.superFlash(Color.GOLD.cpy());
     }
 
-    @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        this.triggerOnManualDiscard();
-    }
+     
 
     @Override
     public AbstractCard makeCopy() { //Optional
